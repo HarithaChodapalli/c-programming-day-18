@@ -1,0 +1,18 @@
+#include<stdio.h>
+main()
+{
+	int n,reversed=0,r,original;
+	printf("enter the number");
+	scanf("%d",&n);
+	original=n;
+	while(n!=0)
+	{
+		r=n%10;
+		reversed =reversed *10+r;
+		n/=10;
+	}
+	if(original==reversed)
+	printf("entered number is a palindrone number");
+	else
+	printf("not an palindrone number");
+}
